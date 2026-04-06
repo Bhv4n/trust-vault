@@ -27,6 +27,6 @@ storeRecord({
   hash: "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2",
   cid: "QmExampleCID123456789abcdef",
   owner: "0x742d35Cc6634C0532925a3b844Bc9e7595f2bD28",
-  timestamp: Date.now() - 86400000,
+  timestamp: 1712400000000,
   fileName: "sample-deed.pdf",
 });

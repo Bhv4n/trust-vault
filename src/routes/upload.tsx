@@ -21,9 +21,9 @@ function UploadPage() {
   const [hash, setHash] = useState("");
   const [dragOver, setDragOver] = useState(false);
 
-  const mockCid = "Qm" + Math.random().toString(36).slice(2, 15) + Math.random().toString(36).slice(2, 15);
+  const [mockCid] = useState(() => "Qm" + Math.random().toString(36).slice(2, 15) + Math.random().toString(36).slice(2, 15));
   const mockOwner = "0x742d35Cc6634C0532925a3b844Bc9e7595f2bD28";
-  const mockTx = "0x" + Array.from({ length: 64 }, () => Math.floor(Math.random() * 16).toString(16)).join("");
+  const [mockTx] = useState(() => "0x" + Array.from({ length: 64 }, () => Math.floor(Math.random() * 16).toString(16)).join(""));
 
   const handleFile = useCallback(async (f: File) => {
     setFile(f);
